@@ -1,12 +1,5 @@
 # Run Book / System Operation Manual
 
-See [`README.md`](README.md) for details of how to use this **Run Book / System Operation Manual** template.
-
-Copyright © 2014-2016 [Skelton Thatcher Consulting](https://skeltonthatcher.com/)
-
-Licenced under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) ![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/3.0/88x31.png)
-
-
 ## Service or system overview
 
 **Service or system name:** 
@@ -15,13 +8,13 @@ Licenced under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) !
 
 > What business need is met by this service or system? What expectations do we have about availability and performance?
 
-_(e.g. Provides reliable automated reconciliation of logistics transactions from the previous 24 hours)_
+_(e.g. Provides the mechanism to allow users to authenticate to our platform)_
 
 ### Technical overview
 
 > What kind of system is this? Web-connected order processing? Back-end batch system? Internal HTTP-based API? ETL control system?
 
-_(e.g. Internal API for order reconciliation based on Ruby and RabbitMQ, deployed in Docker containers on Kubernetes)_
+_(e.g. Internal API for processing ADI Orders based on Java, MongoDB and Kinesis Streams, deployed in Docker containers on AWS ECS Service)_
 
 ### Service Level Agreements (SLAs)
 
@@ -33,13 +26,13 @@ _(e.g. Contractual 99.9% service availability outside of the 03:00-05:00 mainten
 
 > Which team owns and runs this service or system?
 
-_(e.g. The *Sneaky Sharks* team (Bangalore) develops and runs this service: sneaky.sharks@company.com / *#sneaky-sharks* on Slack / Extension 9265)_
+_(e.g. The *Activate* Squad develops and runs this service: squad+activate@evrythng.com / *#squad_activate* on Slack)_
 
 ### Contributing applications, daemons, services, middleware
 
 > Which distinct software applications, daemons, services, etc. make up the service or system? What external dependencies does it have?
 
-_(e.g. Ruby app + RabbitMQ for source messages + PostgreSQL for reconciled transactions)_
+_(e.g. Java App + MongoDB Database + AWS Kinesis Streams)_
 
 ## System characteristics
 
